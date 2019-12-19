@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-compass:before {
+  content: "\e949";
+}
+.icon-accessibility:before {
+  content: "\e9b2";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-tongue:before {
+  content: "\e9e3";
+}
+.icon-crying2:before {
+  content: "\ea02";
+}
+.icon-infinite:before {
+  content: "\ea2f";
+}
+.icon-make-group:before {
+  content: "\ea58";
+}
+.icon-omega:before {
+  content: "\ea66";
+}
+.icon-steam:before {
+  content: "\eaac";
+}
+.icon-basecamp:before {
+  content: "\eab2";
+}

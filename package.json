@@ -1,0 +1,24 @@
+{
+  "name": "lesson-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss:compile": "node-sass sass/base.scss css/index.css",
+    "css:watch": "npm run scss:compile && npm run scss:compile -- -w"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pogorielova/animation-lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pogorielova/animation-lesson/issues"
+  },
+  "homepage": "https://github.com/pogorielova/animation-lesson#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
