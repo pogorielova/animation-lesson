@@ -1,9 +1,12 @@
-@import 'button.scss';
-@import "section-1.scss";
-@import "variables.scss";
 @import "utils";
-@import "section-2.scss";
-@import "section-3.scss";
+@import "variables.scss";
+@import 'button.scss';
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";
+@import "section-5";
+@import "navigation";
 
 
 
@@ -30,6 +33,7 @@ body {
   height: 90vh;
   background-size: cover;
   clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+  position: relative;
 
     .logo {
     height: 5rem;

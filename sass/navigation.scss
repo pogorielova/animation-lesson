@@ -1,0 +1,69 @@
+.navigation {
+  .navi-checkbox {
+    display: none;
+  }
+
+  .navi-button {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2rem 7rem rgba(0,0,0,0.3);
+    position: fixed;
+    right: 7rem;
+    top: 7rem;
+    z-index: 2000;
+  }
+
+  .navi-bg {
+    width: 6rem;
+    height: 6rem;
+    background-image: radial-gradient(#7ed56f, #28b485);
+    z-index: 1000;
+    top: 7.5rem;
+    right: 7.5rem;
+    border-radius: 50%;
+    position: fixed;
+    transition: all .5s ease-out;
+  }
+
+  .navi-box {
+    position: fixed;
+    z-index: 1500;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease-out;
+  }
+
+  .list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, -50%);
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    line-height: 7rem;
+    text-align: center;
+    color: white;
+    transition: all .5s ease-out;
+  }
+
+// FUNCTIONALITY -------
+
+  .navi-checkbox:checked ~ .navi-bg {
+    transform: scale(80);
+  }
+
+  .navi-checkbox:checked ~ .navi-box {
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+
+    .list {
+      transform: translate(-50%, -50%);
+    }
+  }
+}

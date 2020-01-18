@@ -11,3 +11,29 @@
   display: flex;
   justify-content: space-between;
 }
+
+.skewed-title {
+  margin: 10rem 0 5rem;
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, rgb(126, 213, 111), rgb(85, 197, 122));
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skew(2deg) skewY(5deg);
+  }
+}
+
+.heading-paragraph {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.paragraph {
+  line-height: 2.5rem;
+}

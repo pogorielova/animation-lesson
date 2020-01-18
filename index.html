@@ -16,8 +16,24 @@
 </head>
 
 <body>
+  <div class="navigation">
+    <input type="checkbox" class="navi-checkbox" id="navi-checkbox">
+    <label for="navi-checkbox" class="navi-button">
+      <span></span>
+    </label>
+    <div class="navi-bg"></div>
+    <nav class="navi-box">
+      <ul class="list">
+        <li class="list-item">01  ABOUT NATOUS</li>
+        <li class="list-item">02  YOUR BENFITS</li>
+        <li class="list-item">03  POPULAR TOURS</li>
+        <li class="list-item">04  STORIES</li>
+        <li class="list-item">05  BOOK NOW</li>
+      </ul>
+    </nav>
+  </div>
   <div class="header">
-    <img class="logo" src="./img/logo-white.png">
+    <img class="logo" srcset="./img/logo-white.png">
     <div class="title">
       <h2 class="main-title">outdoors</h2>
       <h2 class="sub-title">is where life happens</h2>
@@ -26,16 +42,16 @@
   </div>
   <section class="section-1">
     <div class="text-center">
-      <h2>Exciting tour for exciting people</h2>
+      <h2 class="skewed-title">Exciting tour for exciting people</h2>
     </div>
     <div class="wrapper container-flex">
       <div>
-        <h4>Laboris nisi ut aliquip</h4>
-        <p>
+        <h4 class="heading-paragraph">Laboris nisi ut aliquip</h4>
+        <p class="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
-        <h4>Excepteur sint occaecat</h4>
-        <p>
+        <h4 class="heading-paragraph">Excepteur sint occaecat</h4>
+        <p class="paragraph">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <a class="btn-more" href="#">Learn more &rarr;</a>
@@ -90,6 +106,9 @@
     </div>
   </section>
   <section class="section-3">
+    <div class="text-center">
+      <h2 class="skewed-title">Most popular tours</h2>
+    </div>
     <div class="wrapper container-flex">
       <div class="card">
         <div class="side front">
@@ -154,6 +173,60 @@
           <button type="button" name="book">BOOK NOW!</button>
         </div>
       </div>
+    </div>
+    <div class="text-center">
+      <a href="#" class="button button-green">discover all tours</a>
+    </div>
+  </section>
+  <section class="section-4">
+    <div class="bg-video">
+      <video autoplay loop muted>
+        <source src="img/video.mp4" type="video/mp4">
+        <source src="img/video.webm" type="video/webm">
+      </video>
+    </div>
+    <div class="text-center">
+      <h4 class="skewed-title">We make people happy</h4>
+    </div>
+    <article class="story">
+      <figure class="shape">
+        <img src="img/nat-8.jpg">
+        <figcaption class="caption">Mary smith</figcaption>
+      </figure>
+      <div class="text">
+        <h4 class="heading-paragraph">Lorem ipsum dolor sit amet</h4>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </article>
+    <article class="story">
+      <figure class="shape">
+        <img src="img/nat-9.jpg">
+        <figcaption class="caption">jack wilson</figcaption>
+      </figure>
+      <div class="text">
+        <h4 class="heading-paragraph">Lorem ipsum dolor sit amet</h4>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </article>
+  </section>
+  <section class="section-5">
+    <div class="booking">
+      <form class="booking-form">
+        <h4 class="skewed-title">Start booking now</h4>
+        <input type="text" name="name" placeholder="Full name">
+        <input type="text" name="email" placeholder="Email address">
+        <input id="small-group" type="radio" name="group" value="small">
+        <label for="small-group">Small tour group</label>
+        <input id="large-group" type="radio" name="group" value="small">
+        <label for="large-group">Large tour group</label>
+        <div class="booking-button">
+          <a href="#" class="button button-green">next step &rarr;</a>
+        </div>
+      </form>
     </div>
   </section>
 </body>
