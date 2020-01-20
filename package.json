@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss:compile": "node-sass sass/base.scss css/index.comp.css",
+    "scss:compile": "node-sass sass/base.scss css/index.css",
     "css:watch": "npm run scss:compile && npm run scss:compile -- -w",
     "concat:css": "concat -o css/index.conc.css css/index.comp.css css/font.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/index.conc.css -o css/index.prefix.css",
